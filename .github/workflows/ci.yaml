@@ -13,13 +13,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Debug SSH Connection
-      run: |
-        echo "Known Hosts:"
-        cat known_hosts
-        echo "SSH Private Key:"
-        echo "$SSH_PRIVATE_KEY"
-
     - name: SSH and deploy
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
