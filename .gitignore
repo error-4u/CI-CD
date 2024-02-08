@@ -1,3 +1,5 @@
 . todo-app-test.pem
 todo-app-test.pem
 - node_modules
+. ci-test.pem
+ci-test.pem
